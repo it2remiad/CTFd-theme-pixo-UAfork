@@ -407,7 +407,7 @@ const displayUnlock = id => {
         ezAlert({
           title: "Error",
           body: response.errors.score,
-          button: "Got it!"
+          button: "OK"
         });
       });
     }
