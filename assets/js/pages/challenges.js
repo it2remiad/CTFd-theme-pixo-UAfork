@@ -22,7 +22,7 @@ const loadChal = id => {
     ezAlert({
       title: "Завдання приховано!",
       body: "Ви ще не розблокували це завдання!",
-      button: "Зрозуміло!"
+      button: "OK"
     });
     return;
   }
@@ -382,7 +382,7 @@ const displayHint = data => {
   ezAlert({
     title: "Підказка",
     body: data.html,
-    button: "Зрозуміло!"
+    button: "OK"
   });
 };
 
