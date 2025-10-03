@@ -6,7 +6,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Register</h1>
+		<h1>Реєстрація</h1>
 	</div>
 </div>
 <div class="container">
@@ -29,21 +29,21 @@
 					<b>{{ form.name.label }}</b>
 					{{ form.name(class="form-control", value=name) }}
 					<small class="form-text text-muted">
-						Your username on the site
+						Твій нікнейм
 					</small>
 				</div>
 				<div class="form-group">
 					<b>{{ form.email.label }}</b>
 					{{ form.email(class="form-control", value=email) }}
 					<small class="form-text text-muted">
-						Never shown to the public
+						Ніколи не показувати публічно
 					</small>
 				</div>
 				<div class="form-group">
 					<b>{{ form.password.label }}</b>
 					{{ form.password(class="form-control", value=password) }}
 					<small class="form-text text-muted">
-						Password used to log into your account
+						Пароль, що використовується для входу у ваш обліковий запис
 					</small>
 				</div>
 				{{ form.nonce() }}
@@ -60,9 +60,9 @@
 				<div class="row pt-3">
 					<div class="col-md-12 text-center">
 						<small class="text-muted text-center">
-							By registering, you agree to the
-							<a href="{{ Configs.privacy_link }}" rel="noopener" target="_blank">privacy policy</a>
-							and <a href="{{ Configs.tos_link }}" rel="noopener" target="_blank">terms of service</a>
+							Реєструючись, ви погоджуєтесь з 
+							<a href="{{ Configs.privacy_link }}" rel="noopener" target="_blank">політика конфіденційності</a>
+							and <a href="{{ Configs.tos_link }}" rel="noopener" target="_blank">умови використання</a>
 						</small>
 					</div>
 				</div>
