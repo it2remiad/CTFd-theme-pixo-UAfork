@@ -86,7 +86,7 @@ function tokenGenerate(event) {
         ezAlert({
           title: "API Key Generated",
           body: body,
-          button: "Got it!",
+          button: "OK",
           large: true
         });
       }
