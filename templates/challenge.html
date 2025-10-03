@@ -2,17 +2,17 @@
 	<div class="modal-content">
 		<div class="modal-body">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
+				<span aria-hidden="true">&разів;</span>
 			</button>
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
-					<a class="nav-link active" href="#challenge">Challenge</a>
+					<a class="nav-link active" href="#challenge">Завдання</a>
 				</li>
 				{% block solves %}
 					<li class="nav-item">
 						<a class="nav-link challenge-solves" href="#solves">
 							{% if solves != None %}
-								{{ solves }} {% if solves > 1 %}Solves{% else %}Solves{% endif %}
+								{{ solves }} {% if solves > 1 %}Вирішень{% else %}Вирішень{% endif %}
 							{% endif %}
 						</a>
 					</li>
@@ -54,16 +54,16 @@
 									<a class="btn btn-info btn-hint btn-block load-hint" href="javascript:;" data-hint-id="{{ hint.id }}">
 										{% if hint.content %}
 											<small>
-												View Hint
+												Подивитись підказку
 											</small>
 										{% else %}
 											{% if hint.cost %}
 												<small>
-													Unlock Hint for {{ hint.cost }} points
+													Розблокувати підказку за {{ hint.cost }} поінтів
 												</small>
 											{% else %}
 												<small>
-													View Hint
+													Подивитись підказку
 												</small>
 											{% endif %}
 										{% endif %}
@@ -135,9 +135,9 @@
 								<table class="table table-striped text-center">
 									<thead>
 									<tr>
-										<td><b>Name</b>
+										<td><b>Ім'я</b>
 										</td>
-										<td><b>Date</b>
+										<td><b>Дата</b>
 										</td>
 									</tr>
 									</thead>
