@@ -19,7 +19,7 @@ Few Screenshots:
 ### Installation Steps:
 Open your Docker container's terminal then insert the following Command:
 ```
-git clone https://github.com/hmrserver/CTFd-theme-pixo.git /opt/CTFd/CTFd/themes/pixo
+git clone https://github.com/it2remiad/CTFd-theme-pixo-UAfork.git /opt/CTFd/CTFd/themes/pixoUA
 ```
 Then Login as Admin and go to: ```Admin Panel > Config > Themes``` and switch the Theme to pixo and Click on Update.
 
