@@ -20,9 +20,9 @@ const loadChal = id => {
 
   if (chal.type === "hidden") {
     ezAlert({
-      title: "Challenge Hidden!",
-      body: "You haven't unlocked this challenge yet!",
-      button: "Got it!"
+      title: "Завдання приховано!",
+      body: "Ви ще не розблокували це завдання!",
+      button: "Зрозуміло!"
     });
     return;
   }
@@ -380,16 +380,16 @@ setInterval(update, 300000); // Update every 5 minutes.
 
 const displayHint = data => {
   ezAlert({
-    title: "Hint",
+    title: "Підказка",
     body: data.html,
-    button: "Got it!"
+    button: "Зрозуміло!"
   });
 };
 
 const displayUnlock = id => {
   ezQuery({
-    title: "Unlock Hint?",
-    body: "Are you sure you want to open this hint?",
+    title: "Розблокувати підказку??",
+    body: "Ви впевнені що хочете розблокувати цю підказку??",
     success: () => {
       const params = {
         target: id,
